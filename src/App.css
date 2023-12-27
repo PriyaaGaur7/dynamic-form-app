@@ -1,0 +1,242 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.app-container{
+  display: grid;
+  width: 100%;
+  height: 80vh;
+  grid-template-columns: 49% 49%;
+}
+
+form{
+  width: 100%;
+  margin: 5px;
+  border: 2px solid green;
+}
+
+.container {
+  position: relative;
+}
+
+.editor-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.div{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgba(237, 237, 237, 0.838);
+  margin-bottom: 5px;
+}
+
+.required-indicator{
+  color: red;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  height: 70px;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+hr{
+  margin: 2px;
+  border-color: white;
+  width: 95%;
+  align-items: center;
+}
+
+
+
+label{
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+input{
+  height: 29px;
+  margin-right: 10px;
+}
+
+.Group{
+  width: 100%;
+  flex-wrap: wrap;
+  border: 2px solid rgba(237, 237, 237, 0.838);
+  margin-bottom: 5px;
+}
+
+.select{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+select,input{
+  margin-right: 10px;
+  height: 29px;
+  width: 250px;
+  text-align: center;
+}
+
+.hideDetails{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 30px;
+  >span{
+    margin-right: 3px;
+  }
+  
+}
+
+.final{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.div2{
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  right: 0;
+}
+
+.btn{
+  height: 27px;
+  width: 70px;
+  margin-right: 10px;
+  border-radius: 3px;
+  font-size: 17px;
+}
+
+.cancel{
+  background-color: white;
+  cursor: pointer;
+  &:hover{
+    background-color: #f2f2f2;
+  }
+}
+
+.submit{
+  background-color: black;
+  color: white;
+  &:hover{
+    background-color: #6a6a6a;
+  }
+}
+
+.radio{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 10px;
+}
+
+input[type=button]{
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.opt.selected {
+  >input[type=button]{
+    background-color: Green;
+  }
+}
+
+.switch{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+input[type="checkbox"]{
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.hidden{
+  display: none!important;
+}
+
+textarea{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  width: 95%;
+  margin: 10px;
+  height: 70vh;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
